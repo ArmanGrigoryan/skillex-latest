@@ -19,3 +19,12 @@ Implement a dynamic product filtering system using **React.js**.
 
 ## Expected Deliverables
 - A fully functional, responsive, and user-friendly product listing page with filtering and pagination.
+
+
+### Frontend
+- npm run install:dashboard 
+- npm run dev
+
+### Backend
+- npm run install:server 
+- npm run serve
