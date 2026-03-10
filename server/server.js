@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors');
 
 const app = express();
-const PORT = 3001;
+const PORT = 9000;
 
 app.use(cors());
 app.use(express.json());
@@ -89,11 +89,13 @@ app.get('/products', (req, res) => {
     let filtered = [...products];
 
     if (category) {
-        filtered = filtered.filter(p => p.category === category);
+        filtered = filtered.filter(p => p.category.toLowerCase() === category.toLowerCase());
     }
 
     if (brand) {
-        filtered = filtered.filter(p => p.brand === brand);
+        const lowerText = brand.toUpperCase();
+
+        filtered = filtered.filter(p => p.brand.toUpperCase().includes(lowerText));
     }
 
     if (minPrice) {

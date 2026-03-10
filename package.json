@@ -1,0 +1,25 @@
+{
+  "name": "filtering-ui",
+  "version": "1.0.0",
+  "private": true,
+  "description": "product api items filtering",
+  "homepage": "https://github.com/vaheajamyan/front-end-task-1#readme",
+  "bugs": {
+    "url": "https://github.com/vaheajamyan/front-end-task-1/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vaheajamyan/front-end-task-1.git"
+  },
+  "license": "ISC",
+  "author": "arman grigoryan",
+  "type": "module",
+  "scripts": {
+    "dev": "npm --prefix dashboard run dev",
+    "build": "npm --prefix dashboard run build",
+    "preview": "npm --prefix dashboard run preview",
+    "install:dashboard": "npm install --prefix dashboard",
+    "serve": "npm --prefix server run start",
+    "install:server": "npm install --prefix server"
+  }
+}
